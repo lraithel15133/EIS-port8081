@@ -54,7 +54,7 @@ If the stock binary file does not work, you can try compiling it
 
 ```shell
 cd ~
-git clone https://github.com/MagicPhoenix/EIS
+git clone https://github.com/lraithel15133/EIS-port8081
 cd EIS
 wget -qO- https://raw.githubusercontent.com/voidint/g/master/install.sh | bash
 source /home/pi/.g/env
