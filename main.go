@@ -60,7 +60,7 @@ func main() {
 
 	app.HandleDir("/static", iris.Dir("./static"))
 
-	app.Listen(":8080")
+	app.Listen(":8081")
 }
 
 func home(ctx iris.Context) {
