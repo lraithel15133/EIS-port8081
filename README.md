@@ -16,7 +16,7 @@ It provide a web-ui for running `SHAPER_CALIBRATE` and generate charts.
 
 ```shell
 cd ~
-git clone https://github.com/MagicPhoenix/EIS
+git clone https://github.com/lraithel15133/EIS-port8081
 cd EIS
 chmod +x ./eis
 chmod +x install.sh
@@ -24,7 +24,7 @@ sudo ./install.sh
 nohup ./eis &
 ```
 
-Open http://\<your-ip\>:8080
+Open http://\<your-ip\>:8081
 
 Set Socket Config and Path Config
 
