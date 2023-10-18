@@ -1,0 +1,21 @@
+2023/08/25 21:59:46 db connected
+
+2023/08/25 21:59:46 [31;1m/home/pi/EIS/model/model.go:77 [35;1mrecord not found
+[0m[33m[0.459ms] [34;1m[rows:0][0m SELECT * FROM `settings` WHERE `settings`.`deleted_at` IS NULL ORDER BY `settings`.`id` LIMIT 1
+[ERRO] 2023/08/25 21:59 listen tcp :8080: bind: address already in use
+2023/08/25 22:05:40 db connected
+
+2023/08/25 22:05:40 [31;1m/home/pi/EIS/model/model.go:77 [35;1mrecord not found
+[0m[33m[0.637ms] [34;1m[rows:0][0m SELECT * FROM `settings` WHERE `settings`.`deleted_at` IS NULL ORDER BY `settings`.`id` LIMIT 1
+[ERRO] 2023/08/25 22:05 listen tcp :8080: bind: address already in use
+2023/08/25 22:21:51 db connected
+[ERRO] 2023/08/25 22:21 listen tcp :8080: bind: address already in use
+2023/08/25 22:31:38 db connected
+[ERRO] 2023/08/25 22:31 listen tcp :8090: bind: address already in use
+2023/08/25 22:31:58 db connected
+[ERRO] 2023/08/25 22:31 listen tcp :8090: bind: address already in use
+2023/10/17 20:47:20 db connected
+Iris Version: 12.2.0
+
+Now listening on: http://localhost:8090
+Application started. Press CTRL+C to shut down.
