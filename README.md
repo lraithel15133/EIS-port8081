@@ -17,7 +17,7 @@ It provide a web-ui for running `SHAPER_CALIBRATE` and generate charts.
 ```shell
 cd ~
 git clone https://github.com/lraithel15133/EIS-port8081
-cd EIS
+cd EIS-port8081
 chmod +x ./eis
 chmod +x install.sh
 sudo ./install.sh  
