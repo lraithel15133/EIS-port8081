@@ -14,6 +14,7 @@ It provide a web-ui for running `SHAPER_CALIBRATE` and generate charts.
 
 > The current executable only works on ARM. If you use it on x86, you need to compile it yourself.
 
+32bit:
 ```shell
 cd ~
 git clone https://github.com/lraithel15133/EIS-port8081
@@ -22,6 +23,17 @@ chmod +x ./eis
 chmod +x install.sh
 sudo ./install.sh  
 nohup ./eis &
+```
+
+64bit:
+```shell
+cd ~
+git clone https://github.com/lraithel15133/EIS-port8081
+cd EIS-port8081
+chmod +x ./eis_64
+chmod +x install.sh
+sudo ./install.sh  
+nohup ./eis_64 &
 ```
 
 Open http://\<your-ip\>:8081
@@ -51,7 +63,10 @@ That's all, now you can click ` +New Test` , when it shows 100% Command complete
 ### Compile
 
 If the stock binary file does not work, you can try compiling it
+When you enter g install 1.18, make sure you select the correct version for 32 or 64 bit
 
+
+32bit: go1.18.linux-armv6l.tar.gz
 ```shell
 cd ~
 git clone https://github.com/lraithel15133/EIS-port8081
@@ -63,6 +78,21 @@ go mod tidy
 rm eis
 go build -o eis main.go 
 chmod +x eis
+
+```
+
+64bit: go1.18.linux-arm64.tar.gz
+```shell
+cd ~
+git clone https://github.com/lraithel15133/EIS-port8081
+cd EIS-port8081
+wget -qO- https://raw.githubusercontent.com/voidint/g/master/install.sh | bash
+source /home/pi/.g/env
+g install 1.18
+go mod tidy
+rm eis
+go build -o eis main.go 
+chmod +x eis_64
 
 ```
 
