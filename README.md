@@ -55,7 +55,7 @@ If the stock binary file does not work, you can try compiling it
 ```shell
 cd ~
 git clone https://github.com/lraithel15133/EIS-port8081
-cd EIS
+cd EIS-port8081
 wget -qO- https://raw.githubusercontent.com/voidint/g/master/install.sh | bash
 source /home/pi/.g/env
 g install 1.18
